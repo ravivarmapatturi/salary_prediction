@@ -3,15 +3,16 @@ import joblib
 import numpy as np
 
 
-
 def load_model():
-    model=joblib.load(r"codes/best_model.pkl")
-    le_country=joblib.load(r"codes/le_country.pkl")
-    le_education=joblib.load(r"codes/le_education.pkl")
-    return model,le_country,le_education
+    with open('codes/saved_steps.pkl', 'rb') as file:
+        data = pickle.load(file)
+    return data
 
-model,le_country,le_education=load_model()
-regressor=model
+data = load_model()
+
+regressor = data["model"]
+le_country = data["le_country"]
+le_education = data["le_education"]
 
 
 
