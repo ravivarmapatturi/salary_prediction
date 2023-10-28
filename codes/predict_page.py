@@ -5,9 +5,9 @@ import numpy as np
 
 
 def load_model():
-    model=joblib.load(r"models\best_model.pkl")
-    le_country=joblib.load(r"codes\le_country.pkl")
-    le_education=joblib.load(r"codes\le_education.pkl")
+    model=joblib.load(r"codes/best_model.pkl")
+    le_country=joblib.load(r"codes/le_country.pkl")
+    le_education=joblib.load(r"codes/le_education.pkl")
     return model,le_country,le_education
 
 model,le_country,le_education=load_model()
