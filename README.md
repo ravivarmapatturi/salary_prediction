@@ -33,35 +33,42 @@ sudo apt update
 sudo apt-get update
 sudo apt upgrade -y
 sudo apt install git curl unzip tar make sudo vim wget -y
+```
+
 Step 2: Clone the GitHub Repository
 Next, clone the repository containing the project code:
 
-bash
-Copy code
+```bash
 git clone https://github.com/ravivarmapatturi/salary_prediction.git
 cd salary_prediction
+```
+
 Step 3: Install Python and Required Libraries
 If Python3 and pip are not already installed, run the following command to install them:
 
-bash
-Copy code
+```bash
 sudo apt install python3-pip
 Now, install the required Python packages from the requirements.txt file:
+```
 
-bash
-Copy code
+```bash
 pip3 install -r requirements.txt
 Step 4: Run the Application
 You can choose to run the Streamlit application either temporarily (for testing purposes) or permanently (in the background).
+```
 
 To temporarily run the Streamlit application:
-bash
-Copy code
+```bash
+
 python3 -m streamlit run app.py
+```
+
 To run the application permanently (in the background):
-bash
-Copy code
+
+```bash
 nohup python3 -m streamlit run app.py &
+```
+
 Step 5: Access the Web Application
 Once the application is running, you can access it in your browser using the following URL:
 
