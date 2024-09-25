@@ -17,6 +17,9 @@ This project involves building a machine learning web application to predict dev
 - The selected model was integrated into a user-friendly web application built using Streamlit.
 - Users can input relevant data (experience, education, job roles) and receive salary predictions based on the trained model.
 - The application allows users to explore the impact of different variables on predicted salaries, making it a valuable tool for understanding salary dynamics in the tech industry.
+- The Salary Prediction Web Application has been deployed on an AWS t2.micro instance running Ubuntu OS. You can access the application using the following URL:
+
+- [http://3.87.225.123:8501/](http://3.87.225.123:8501/)
 
 ---
 
